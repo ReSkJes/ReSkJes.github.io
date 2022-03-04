@@ -37,11 +37,7 @@
                     maxLines: Infinity,                       // опционально: масштабировать редактор вертикально по размеру кода
                     fontSize: "12pt",                         // опционально: размер шрифта ставим побольше
                 });
-                code.$blockScrolling = Infinity;              // отключаем устаревшие, не поддерживаемые фишки редактора
-                $.get("https://raw.githubusercontent.com/user/repository/master/" + "path_to_source_file_in_repo.cpp", function(data) {
-                code.setValue(data);    // обновляем содержимое редактора полученными данными
-                code.clearSelection();  // опционально: снимаем выделение строк в редакторе
-        });
+                code.$blockScrolling = Infinity;              // отключаем устаревшие, не поддерживаемые фишки редактора                            
             });
         </script>
         
